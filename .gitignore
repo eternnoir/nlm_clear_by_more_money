@@ -1,0 +1,43 @@
+# Binaries
+nlm_clear_by_more_money
+nlm_clear_by_more_money.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build directory
+build/
+
+# Test output
+*.pptx
+test_data/
+
+# IDE & Tools
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Go
+vendor/
+go.work
+go.work.sum
+
+# Environment
+.env
+.env.local
+*.env
+
+# Debug
+debug
+*.log
