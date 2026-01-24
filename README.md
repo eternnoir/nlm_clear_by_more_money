@@ -35,14 +35,14 @@ It's not elegant. It's not cheap. But it works.
 ### From Source
 
 ```bash
-git clone https://github.com/user/nlm_clear_by_more_money.git
+git clone https://github.com/eternnoir/nlm_clear_by_more_money.git
 cd nlm_clear_by_more_money
 make build
 ```
 
 ### Pre-built Binaries
 
-Download from [Releases](https://github.com/user/nlm_clear_by_more_money/releases) page.
+Download from [Releases](https://github.com/eternnoir/nlm_clear_by_more_money/releases) page.
 
 ## Usage
 
@@ -116,18 +116,6 @@ make clean
 3. **Enhanced Images → PPTX**: Packages everything into a valid PPTX file
 
 The PPTX builder is pure Go — no external dependencies, no Office installation required.
-
-## Cost Estimation
-
-Rough estimates (your mileage may vary):
-
-| Resolution | ~Tokens/Page | ~Cost/Page |
-|------------|--------------|------------|
-| 1K | ~1,000 | $0.001 |
-| 2K | ~4,000 | $0.004 |
-| 4K | ~16,000 | $0.016 |
-
-A 100-page PDF at 2K ≈ $0.40. That's cheaper than therapy for dealing with broken characters.
 
 ## FAQ
 
