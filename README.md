@@ -23,6 +23,14 @@ PDF → Images (300 DPI) → Gemini "please fix this" → PPTX
 
 It's not elegant. It's not cheap. But it works.
 
+## Example
+
+| Before | After |
+|--------|-------|
+| ![Before](images/before.png) | ![After](images/after.png) |
+
+*Left: NotebookLM's "best effort". Right: After throwing money at it.*
+
 ## Features
 
 - 🔥 **Parallel processing** — Burn money faster with concurrent API calls
