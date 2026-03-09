@@ -6,11 +6,19 @@ import (
 	"fmt"
 	"image"
 	"image/png"
+	"os"
 
 	"google.golang.org/genai"
 )
 
-const model = "gemini-3-pro-image-preview"
+const defaultModel = "gemini-3.1-flash-image-preview"
+
+func getModel() string {
+	if m := os.Getenv("GEMINI_MODEL"); m != "" {
+		return m
+	}
+	return defaultModel
+}
 
 // Config 儲存 Gemini API 的配置參數
 type Config struct {
@@ -79,7 +87,7 @@ func (c *Client) EnhanceImage(ctx context.Context, img image.Image) ([]byte, err
 
 	// 使用 streaming 取得結果
 	var resultData []byte
-	for result, err := range c.client.Models.GenerateContentStream(ctx, model, contents, config) {
+	for result, err := range c.client.Models.GenerateContentStream(ctx, getModel(), contents, config) {
 		if err != nil {
 			return nil, err
 		}

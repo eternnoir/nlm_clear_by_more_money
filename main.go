@@ -38,6 +38,7 @@ func main() {
 		fmt.Println("  -no-enhance     Skip Gemini enhancement (for testing)")
 		fmt.Println("\nEnvironment variables:")
 		fmt.Println("  GEMINI_API_KEY  (required unless -no-enhance) Gemini API key")
+		fmt.Println("  GEMINI_MODEL    Gemini model name (default: gemini-3.1-flash-image-preview)")
 		fmt.Println("  IMAGE_SIZE      Default image size")
 		fmt.Println("  ENHANCE_PROMPT  Default enhancement prompt")
 		os.Exit(1)
